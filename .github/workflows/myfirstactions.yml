@@ -1,0 +1,16 @@
+name: my-frist-actions
+
+on:
+ push:
+   branches: [ main ]
+ pull_request:
+   branches: [ main ]
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   
+   steps:
+     - uses: actions/checkout@v2
+     - name: run a oneline script
+     - run: echo hellow, world!
